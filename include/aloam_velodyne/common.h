@@ -40,6 +40,11 @@
 
 #include <pcl/point_types.h>
 
+
+struct PointXYZI {
+  float x{0},y{0},z{0},intensity{0};
+};
+
 typedef pcl::PointXYZI PointType;
 
 inline double rad2deg(double radians)

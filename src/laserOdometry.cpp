@@ -66,7 +66,7 @@ constexpr double DISTANCE_SQ_THRESHOLD = 25;
 constexpr double NEARBY_SCAN = 2.5;
 
 int skipFrameNum = 5;
-bool systemInited = false;
+bool system_initialized = false;
 
 double timeCornerPointsSharp = 0;
 double timeCornerPointsLessSharp = 0;
@@ -264,9 +264,9 @@ int main(int argc, char **argv)
 
             TicToc t_whole;
             // initializing
-            if (!systemInited)
+            if (!system_initialized)
             {
-                systemInited = true;
+                system_initialized = true;
                 std::cout << "Initialization finished \n";
             }
             else
